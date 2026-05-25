@@ -1,0 +1,10 @@
+gymnasium[box2d,classic-control,mujoco]
+jupyterlab
+matplotlib
+notebook
+numpy
+openpyxl
+pandas
+seaborn
+torch
+tqdm

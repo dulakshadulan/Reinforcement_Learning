@@ -1,82 +1,104 @@
-# Reinforcement Learning Implementations 🚀
+# Reinforcement Learning Implementations
 
-This repository contains my implementations of core Reinforcement Learning (RL) algorithms, built using OpenAI Gymnasium to understand RL methods.
+This repository contains notebook-based implementations and experiments for core reinforcement learning algorithms using Python, PyTorch, and Gymnasium.
 
-📌 Algorithms Implemented
-🔹 Value-Based Methods
+## Algorithms and Experiments
 
-Q-Learning (Taxi-v3 environment)
+- Tabular Q-learning for `Taxi-v3`, including action masking and statistical comparison notebooks.
+- Deep Q-Network (DQN) for `LunarLander-v3`.
+- REINFORCE policy gradient for `InvertedPendulum-v4`.
+- Advantage Actor-Critic (A2C) experiments for `LunarLander-v3`.
+- Introductory Gymnasium experiments with environments such as `Blackjack-v1`, `CartPole-v1`, and `CarRacing-v3`.
 
-Deep Q-Network (DQN) – LunarLander
+## Concepts Covered
 
-🔹 Policy-Based Methods
+- Markov Decision Processes (MDPs)
+- Bellman updates
+- Exploration vs. exploitation
+- Q-tables and action masking
+- Experience replay
+- Target networks
+- Policy gradients
+- Actor-critic learning
 
-REINFORCE (Policy Gradient)
+## Tech Stack
 
-🔹 (Planned)
+- Python
+- Jupyter Notebook
+- Gymnasium
+- PyTorch
+- NumPy, pandas, matplotlib, and seaborn
 
-Actor-Critic
+## Project Structure
 
-Advantage Actor-Critic (A2C)
+```text
+RL/
+|-- A2C/
+|   `-- Lunar Lander/
+|-- DQN/
+|   `-- Lunar Lander/
+|-- Project1/
+|   |-- blac_jack.ipynb
+|   `-- test.ipynb
+|-- Reinforce/
+|   `-- Invereted Pendulum/
+|-- Tabular Q/
+|   `-- Taxi agent/
+|-- requirements.txt
+`-- README.md
+```
 
-Proximal Policy Optimization (PPO)
+## Setup
 
-🧠 Concepts Covered
+Create and activate a virtual environment:
 
-Markov Decision Processes (MDPs)
+```bash
+python -m venv .venv
 
-Bellman Equation
+# Windows PowerShell
+.\.venv\Scripts\Activate.ps1
 
-Exploration vs Exploitation
+# macOS/Linux
+source .venv/bin/activate
+```
 
-Experience Replay
+Install the dependencies:
 
-Target Networks
-
-Policy Gradients
-
-🛠️ Tech Stack
-
-Python
-
-PyTorch
-
-Gymnasium (OpenAI Gym)
-
-📂 Project Structure
-
-rl-project/
-│
-├── q_learning/
-│ └── taxi_agent.py
-│
-├── dqn/
-│ └── lunar_lander.py
-│
-├── reinforce/
-│ └── reinforce.py
-│
-├── requirements.txt
-└── README.md
-
-▶️ How to Run
-
-Clone the repository:
-git clone https://github.com/your-username/rl-project.git
-
-Install dependencies:
+```bash
 pip install -r requirements.txt
+```
 
-Run an example:
-python dqn/lunar_lander.py
+Some Gymnasium environments used in this project require optional simulation dependencies:
 
+- `LunarLander-v3` and `CarRacing-v3` use Box2D.
+- `InvertedPendulum-v4` uses MuJoCo.
+- Human rendering uses graphical packages such as pygame.
 
-📜 License
+These extras are included in `requirements.txt`.
+
+## How to Run
+
+Start Jupyter Lab or Jupyter Notebook from the repository root:
+
+```bash
+jupyter lab
+```
+
+Then open one of the notebooks, for example:
+
+- `Tabular Q/Taxi agent/Taxi_actionMask_agent.ipynb`
+- `DQN/Lunar Lander/lunar_agent.ipynb`
+- `Reinforce/Invereted Pendulum/pendulum_agent.ipynb`
+- `A2C/Lunar Lander/lunar.ipynb`
+
+Run the cells in order. For notebooks that render environments with `render_mode="human"`, make sure your environment supports opening a display window.
+
+## License
 
 This project is licensed under the MIT License.
 
-👤 Author
+## Author
 
-Dulaksha Dulan
-Undergraduate – Artificial Intelligence
+Dulaksha Dulan  
+Undergraduate - Artificial Intelligence  
 University of Moratuwa
